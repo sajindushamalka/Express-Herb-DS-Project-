@@ -17,7 +17,6 @@ const URL = process.env.MONGODB_URL;
 mongoose.connect(URL,{
    
 })
-
 const connection = mongoose.connection;
 connection.once("open", ()=>{
     console.log("MongoDB Connection success!")
